@@ -1,0 +1,156 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+/* Make divs responsive */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.box {
+    flex: 1;
+    background-color: lightblue;
+    height: 750px;
+    min-width: auto;
+    min-height: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Box 1 */
+#box1 {
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+#box1 p {
+    margin-top: 10px;
+}
+
+#box1 h1 {
+    font-size: x-large;
+}
+
+/* Button */
+#box1 button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#box1 button:hover {
+    background-color: darkblue;
+}
+
+/* Box 2 */
+#box2 {
+    position: relative;
+}
+
+#box2 h1 {
+    font-size: x-large;
+}
+
+/* Box 3 (Form) */
+
+#box3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    position: relative;
+}
+
+#box3 h1 {
+    font-size: x-large;
+}
+
+#box3 form {
+    width: 100%;
+}
+
+#box3 label {
+    font-weight: bold;
+}
+
+#box3 input, #box3 textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#box3 button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#box3 button:hover {
+    background-color: darkblue;
+}
+
+/* Box 4 */
+#box4 h1 {
+    font-size: x-large;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+}
